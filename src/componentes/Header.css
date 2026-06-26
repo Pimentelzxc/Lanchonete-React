@@ -1,0 +1,12 @@
+.titulo{
+    border-radius: 20px;
+    width: 75%;
+    height: 150px;
+    margin: 0 auto;
+    background-color:rgb(156, 26, 26);
+}
+
+.titulo h1,
+.titulo h2{
+    color:rgb(255, 255, 255);
+}

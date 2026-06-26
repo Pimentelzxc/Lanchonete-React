@@ -1,0 +1,75 @@
+.btn_prod {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(149, 16, 16);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 2px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 25px;
+
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.btn_prod:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 26px rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+}
+
+.btn_prod:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.bt_adicionar {
+  background-color: rgb(163, 29, 29);
+  color: rgb(149, 16, 16);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+  font-size: 10px;
+
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.bt_adicionar:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 26px rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+}
+
+.bt_adicionar:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.bt_diminuir {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(149, 16, 16);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+  font-size: 10px;
+
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.bt_diminuir:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 26px rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+}
+
+.bt_diminuir:active {
+  transform: translateY(0) scale(0.99);
+}

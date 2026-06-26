@@ -1,0 +1,27 @@
+.login {
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  background: rgb(149, 16, 16);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.login input::placeholder {
+  color: #ffffff;
+  text-align: center;
+}
+
+.login input,
+.btn_login {
+  padding: 10px;
+}
+
+
+.btn_login {
+  color: white;
+  background: #e11d48;
+  border: 0;
+  border-radius: 6px;
+}

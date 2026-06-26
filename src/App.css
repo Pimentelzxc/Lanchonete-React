@@ -1,0 +1,49 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 30px;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.card-prod {
+  width: 190px;
+  padding: 18px;
+  background: rgb(149, 16, 16);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px #0001;
+}
+.card-funcionario {
+  width: 190px;
+  padding: 18px;
+  background: rgb(4, 59, 62);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px #0001;
+}
+
+
+.card-prod h2,
+.card-funcionario h2 {
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.card-prod p,
+.card-funcionario p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.card-funcionario {
+  border-color: #ffffff;
+}
