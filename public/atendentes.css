@@ -1,0 +1,15 @@
+.pagina-atendentes { margin: 38px 24px 60px; }
+.pagina-atendentes > .titulo-area { margin-bottom: 28px; letter-spacing: 3px; }
+.pagina-atendentes .atendentes { margin: 0; display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 24px; }
+.pagina-atendentes .card-funcionario { position: relative; width: 260px; padding: 9px 9px 20px; display: block; overflow: hidden; border: 1px solid #c6a15b; border-radius: 18px; background: linear-gradient(160deg,#2d2722,#100e0c); color: #fffaf0; text-align: center; box-shadow: 0 16px 36px #24140e2e; transition: transform .25s ease, box-shadow .25s ease; }
+.pagina-atendentes .card-funcionario::before { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(130deg,#ffffff1c,transparent 35%); }
+.pagina-atendentes .card-funcionario:hover { transform: translateY(-7px); box-shadow: 0 22px 42px #24140e45; }
+.pagina-atendentes .card-funcionario.destaque { border-color: #e5cf9e; box-shadow: 0 16px 38px #8a642a38; }
+.moldura-foto { height: 310px; overflow: hidden; border-radius: 12px 12px 8px 8px; background:#211b17; }
+.moldura-foto img { width:100%; height:100%; display:block; object-fit:cover; object-position:center top; transition:transform .35s ease; }
+.card-funcionario:hover .moldura-foto img { transform:scale(1.035); }
+.info-atendente { position:relative; padding:18px 8px 0; }
+.info-atendente span { display:inline-block; padding:4px 10px; border:1px solid #c6a15b88; border-radius:20px; color:#e5cf9e; font-size:10px; font-weight:700; letter-spacing:2px; }
+.pagina-atendentes .info-atendente h2 { margin:10px 0 4px; color:#fffaf0; font-family:Georgia,serif; font-size:25px; letter-spacing:1px; }
+.pagina-atendentes .info-atendente p { margin:0; color:#c9bca9; font-size:12px; }
+@media(max-width:500px){.pagina-atendentes{margin:25px 10px}.pagina-atendentes .card-funcionario{width:min(100%,290px)}.moldura-foto{height:340px}}
