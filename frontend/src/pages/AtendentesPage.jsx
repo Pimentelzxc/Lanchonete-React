@@ -1,9 +1,43 @@
 function AtendentesPage() {
-  return <main className="pagina-atendentes"><h2>ATENDENTES</h2><section className="atendentes">
-    <article><img src="/images/kirito-atendente.png" alt="Kirito" /><h3>Kirito</h3></article>
-    <article><img src="/images/asuna-atendente.png" alt="Asuna" /><h3>Asuna</h3></article>
-    <article><img src="/images/sinon-atendente.png" alt="Sinon" /><h3>Sinon</h3></article>
-  </section></main>;
+  return (
+    <main className="pagina-atendentes">
+      <h2 className="titulo-area">ATENDENTES</h2>
+      <section className="atendentes">
+        <article className="card-funcionario">
+          <div className="moldura-foto">
+            <img src="/images/kirito-atendente.png" alt="Kirito como atendente da lanchonete" />
+          </div>
+          <div className="info-atendente">
+            <span>ATENDENTE</span>
+            <h2>KIRITO</h2>
+            <p>Especialista em pedidos</p>
+          </div>
+        </article>
+
+        <article className="card-funcionario destaque">
+          <div className="moldura-foto">
+            <img src="/images/asuna-atendente.png" alt="Asuna como atendente da lanchonete" />
+          </div>
+          <div className="info-atendente">
+            <span>GERENTE</span>
+            <h2>ASUNA</h2>
+            <p>Atendimento e qualidade</p>
+          </div>
+        </article>
+
+        <article className="card-funcionario">
+          <div className="moldura-foto">
+            <img src="/images/sinon-atendente.png" alt="Sinon como atendente da lanchonete" />
+          </div>
+          <div className="info-atendente">
+            <span>ATENDENTE</span>
+            <h2>SINON</h2>
+            <p>Agilidade nos pedidos</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  );
 }
 
 export default AtendentesPage;

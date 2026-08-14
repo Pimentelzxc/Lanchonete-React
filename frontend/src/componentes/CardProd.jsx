@@ -1,34 +1,30 @@
 import "./CardProd.css";
-import {useState} from "react";
 
-function CardProd({nome,preco,preco_total}) {
-
-   const [quantidade, setCount] = useState(0);
-
+function CardProd({ nome, preco, foto, quantidade, moeda, onAdicionar, onDiminuir, onComprar }) {
   return (
     <div className="card-prod">
+      <div
+        className="foto-produto"
+        style={{ backgroundPosition: foto }}
+        role="img"
+        aria-label={`Foto de ${nome}`}
+      />
       <h2>{nome}</h2>
-      <p>Preço: R${preco}</p>
+      <p>Preco: {moeda.format(preco)}</p>
       <p>Quantidade: {quantidade}</p>
-      <p>{preco_total} Total R${preco * quantidade}</p>
+      <p>Total: {moeda.format(preco * quantidade)}</p>
 
-
-      
-       <button className="bt_adicionar" id="add" onClick={() => setCount(quantidade + 1)}>➕</button>
-       
-
-       
-      <button className="btn_prod" onClick={() => {}}>🛒</button>
-
-
-
-
-        <button className="bt_diminuir" id="subtract" onClick={() => 
-          {if (quantidade > 0) {
-            setCount(quantidade - 1);
-          }}
-        }>➖</button>
-
+      <div className="botoes">
+        <button className="bt_adicionar" onClick={onAdicionar}>
+          +
+        </button>
+        <button className="btn_prod" onClick={onComprar} aria-label={`Adicionar ${nome} ao carrinho`}>
+          <span aria-hidden="true">&#128722;</span>
+        </button>
+        <button className="bt_diminuir" onClick={onDiminuir}>
+          -
+        </button>
+      </div>
     </div>
   );
 }

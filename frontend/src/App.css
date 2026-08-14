@@ -6,6 +6,37 @@
   margin: 30px;
 }
 
+.atalho-carrinho,
+.pagina-erro a {
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--premium-wine, #3b1018);
+  background: linear-gradient(135deg, var(--premium-gold-light, #e5cf9e), var(--premium-gold, #c6a15b));
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.area-cozinha {
+  margin: 38px 24px 60px;
+}
+
+.grade-pedidos {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.pagina-erro {
+  min-height: 55vh;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+}
+
 .produtos {
   display: flex;
   justify-content: center;

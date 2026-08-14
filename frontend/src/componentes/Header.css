@@ -1,9 +1,11 @@
 .titulo{
     border-radius: 20px;
     width: 75%;
-    height: 150px;
+    min-height: 150px;
     margin: 0 auto;
+    padding: 15px;
     background-color:rgb(156, 26, 26);
+    box-sizing: border-box;
 }
 
 .titulo h1,
