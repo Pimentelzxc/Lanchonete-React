@@ -15,7 +15,12 @@ function CozinhaPage({ pedidos, status, moeda, avancarPedido }) {
                 </header>
                 <div className="pedido-info">
                   <b>{pedido.cliente}</b>
-                  <time>{new Date(pedido.criadoEm).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</time>
+                  <time>
+                    {new Date(pedido.criadoEm).toLocaleTimeString("pt-BR", {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    })}
+                  </time>
                 </div>
                 <ul>
                   {pedido.itens.map((item) => (
@@ -24,12 +29,16 @@ function CozinhaPage({ pedidos, status, moeda, avancarPedido }) {
                     </li>
                   ))}
                 </ul>
-                {pedido.observacao && <p className="observacao">{pedido.observacao}</p>}
+                {pedido.observacao && (
+                  <p className="observacao">{pedido.observacao}</p>
+                )}
                 <div className="pedido-info">
                   Total <b>{moeda.format(pedido.total)}</b>
                 </div>
                 <button onClick={() => avancarPedido(pedido.id)}>
-                  {proximo === "Entregue" ? "Finalizar e entregar" : `Marcar como ${proximo}`}
+                  {proximo === "Entregue"
+                    ? "Finalizar e entregar"
+                    : `Marcar como ${proximo}`}
                 </button>
               </article>
             );

@@ -11,7 +11,11 @@ function Header({ titulo, subtitulo, quantidadeTotal, pedidosAbertos }) {
       <header className="titulo">
         <div className="linha-titulo">
           <h1>{titulo}</h1>
-          <NavLink className="carrinho-header" to="/carrinho" aria-label="Abrir carrinho">
+          <NavLink
+            className="carrinho-header"
+            to="/carrinho"
+            aria-label="Abrir carrinho"
+          >
             <span aria-hidden="true">&#128722;</span>
             <b>{quantidadeTotal || ""}</b>
           </NavLink>

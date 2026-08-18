@@ -27,7 +27,11 @@ function LoginPage({ onEntrar }) {
         <form onSubmit={entrar}>
           <label>
             Nome
-            <input value={nome} onChange={(event) => setNome(event.target.value)} placeholder="Digite seu nome" />
+            <input
+              value={nome}
+              onChange={(event) => setNome(event.target.value)}
+              placeholder="Digite seu nome"
+            />
           </label>
           <label>
             E-mail

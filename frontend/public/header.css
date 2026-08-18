@@ -18,7 +18,9 @@
   background: #ffffff18;
   font-size: 27px;
   text-decoration: none;
-  transition: transform 180ms ease, background 180ms ease;
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
 }
 
 .carrinho-header:hover {
@@ -42,10 +44,20 @@
   font-size: 12px;
 }
 
-.carrinho-header b:not(:empty) { display: grid; }
+.carrinho-header b:not(:empty) {
+  display: grid;
+}
 
 @media (max-width: 600px) {
-  .linha-titulo { gap: 10px; }
-  .linha-titulo h1 { font-size: 30px; }
-  .carrinho-header { width: 48px; height: 45px; font-size: 22px; }
+  .linha-titulo {
+    gap: 10px;
+  }
+  .linha-titulo h1 {
+    font-size: 30px;
+  }
+  .carrinho-header {
+    width: 48px;
+    height: 45px;
+    font-size: 22px;
+  }
 }

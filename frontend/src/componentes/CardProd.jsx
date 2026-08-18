@@ -1,6 +1,15 @@
 import "./CardProd.css";
 
-function CardProd({ nome, preco, foto, quantidade, moeda, onAdicionar, onDiminuir, onComprar }) {
+function CardProd({
+  nome,
+  preco,
+  foto,
+  quantidade,
+  moeda,
+  onAdicionar,
+  onDiminuir,
+  onComprar,
+}) {
   return (
     <div className="card-prod">
       <div
@@ -18,7 +27,11 @@ function CardProd({ nome, preco, foto, quantidade, moeda, onAdicionar, onDiminui
         <button className="bt_adicionar" onClick={onAdicionar}>
           +
         </button>
-        <button className="btn_prod" onClick={onComprar} aria-label={`Adicionar ${nome} ao carrinho`}>
+        <button
+          className="btn_prod"
+          onClick={onComprar}
+          aria-label={`Adicionar ${nome} ao carrinho`}
+        >
           <span aria-hidden="true">&#128722;</span>
         </button>
         <button className="bt_diminuir" onClick={onDiminuir}>

@@ -1,4 +1,10 @@
-import { Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { useMemo, useState } from "react";
 import Header from "./componentes/Header";
 import AtendentesPage from "./pages/AtendentesPage";
@@ -22,7 +28,10 @@ const produtos = [
 ];
 
 const statusPedido = ["Recebido", "Em preparo", "Pronto", "Entregue"];
-const moeda = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+const moeda = new Intl.NumberFormat("pt-BR", {
+  style: "currency",
+  currency: "BRL",
+});
 
 function lerStorage(chave, padrao) {
   try {
@@ -35,9 +44,15 @@ function lerStorage(chave, padrao) {
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [usuario, setUsuario] = useState(() => lerStorage("usuario-lanchonete", null));
-  const [carrinho, setCarrinho] = useState(() => lerStorage("carrinho-lanchonete", {}));
-  const [pedidos, setPedidos] = useState(() => lerStorage("pedidos-lanchonete", []));
+  const [usuario, setUsuario] = useState(() =>
+    lerStorage("usuario-lanchonete", null),
+  );
+  const [carrinho, setCarrinho] = useState(() =>
+    lerStorage("carrinho-lanchonete", {}),
+  );
+  const [pedidos, setPedidos] = useState(() =>
+    lerStorage("pedidos-lanchonete", []),
+  );
   const [cliente, setCliente] = useState("");
   const [observacao, setObservacao] = useState("");
   const [mensagem, setMensagem] = useState("");
@@ -89,9 +104,17 @@ function App() {
     [carrinho],
   );
 
-  const quantidadeTotal = itens.reduce((totalItens, item) => totalItens + item.quantidade, 0);
-  const total = itens.reduce((soma, item) => soma + item.preco * item.quantidade, 0);
-  const pedidosAbertos = pedidos.filter((pedido) => pedido.status !== "Entregue");
+  const quantidadeTotal = itens.reduce(
+    (totalItens, item) => totalItens + item.quantidade,
+    0,
+  );
+  const total = itens.reduce(
+    (soma, item) => soma + item.preco * item.quantidade,
+    0,
+  );
+  const pedidosAbertos = pedidos.filter(
+    (pedido) => pedido.status !== "Entregue",
+  );
 
   const enviarPedido = () => {
     if (!itens.length) {
@@ -125,7 +148,8 @@ function App() {
         const indiceAtual = statusPedido.indexOf(pedido.status);
         return {
           ...pedido,
-          status: statusPedido[Math.min(indiceAtual + 1, statusPedido.length - 1)],
+          status:
+            statusPedido[Math.min(indiceAtual + 1, statusPedido.length - 1)],
         };
       }),
     );
@@ -194,7 +218,10 @@ function App() {
           }
         />
         <Route path="/atendentes" element={<AtendentesPage />} />
-        <Route path="/conta" element={<ContaPage usuario={usuario} onSair={deslogar} />} />
+        <Route
+          path="/conta"
+          element={<ContaPage usuario={usuario} onSair={deslogar} />}
+        />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>

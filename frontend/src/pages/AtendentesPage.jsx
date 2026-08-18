@@ -5,7 +5,10 @@ function AtendentesPage() {
       <section className="atendentes">
         <article className="card-funcionario">
           <div className="moldura-foto">
-            <img src="/images/kirito-atendente.png" alt="Kirito como atendente da lanchonete" />
+            <img
+              src="/images/kirito-atendente.png"
+              alt="Kirito como atendente da lanchonete"
+            />
           </div>
           <div className="info-atendente">
             <span>ATENDENTE</span>
@@ -16,7 +19,10 @@ function AtendentesPage() {
 
         <article className="card-funcionario destaque">
           <div className="moldura-foto">
-            <img src="/images/asuna-atendente.png" alt="Asuna como atendente da lanchonete" />
+            <img
+              src="/images/asuna-atendente.png"
+              alt="Asuna como atendente da lanchonete"
+            />
           </div>
           <div className="info-atendente">
             <span>GERENTE</span>
@@ -27,7 +33,10 @@ function AtendentesPage() {
 
         <article className="card-funcionario">
           <div className="moldura-foto">
-            <img src="/images/sinon-atendente.png" alt="Sinon como atendente da lanchonete" />
+            <img
+              src="/images/sinon-atendente.png"
+              alt="Sinon como atendente da lanchonete"
+            />
           </div>
           <div className="info-atendente">
             <span>ATENDENTE</span>

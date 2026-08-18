@@ -1,1 +1,119 @@
-.pagina-login,.pagina-conta{min-height:calc(100vh - 40px);padding:35px 20px;display:grid;place-items:center}.login-premium,.conta-card{width:min(100%,410px);padding:34px;border:1px solid #c6a15b;border-radius:20px;background:linear-gradient(150deg,#3b1018,#21090e);color:#fffaf0;box-shadow:0 22px 50px #2b0b1240}.selo-login,.avatar{width:68px;height:68px;margin:0 auto 16px;display:grid;place-items:center;border:2px solid #c6a15b;border-radius:50%;color:#e5cf9e;font:700 24px Georgia,serif}.login-premium h1{margin:5px 0 8px;font:700 31px Georgia,serif}.login-premium>p,.conta-card>p{margin:5px 0;color:#d5c7b4}.chamada{color:#e5cf9e!important;font-size:10px;font-weight:800;letter-spacing:2px}.login-premium form{margin-top:25px;text-align:left}.login-premium label{display:block;margin:13px 0;color:#e5cf9e;font-size:12px;font-weight:700}.login-premium input{width:100%;margin-top:5px;padding:12px;border:1px solid #c6a15b88;border-radius:7px;background:#fffaf0;color:#29231e;outline:none}.login-premium input:focus{border-color:#e5cf9e;box-shadow:0 0 0 3px #c6a15b25}.login-premium button,.botao-sair{width:100%;margin-top:12px;padding:12px;border:0;border-radius:7px;background:linear-gradient(135deg,#e5cf9e,#c6a15b);color:#3b1018;font-weight:800;cursor:pointer}.erro-login{min-height:18px;color:#ffd0d0!important;font-size:12px;text-align:center}.pagina-conta{min-height:auto}.conta-card h2{margin:6px 0;font:700 28px Georgia,serif}.conta-info{margin:25px 0 10px;padding:14px;display:flex;justify-content:space-between;border-block:1px solid #c6a15b55}.conta-info strong{color:#a9e1b7}.botao-sair{background:transparent;color:#e5cf9e;border:1px solid #c6a15b}.botao-sair:hover{background:#c6a15b;color:#3b1018}
+.pagina-login,
+.pagina-conta {
+  min-height: calc(100vh - 40px);
+  padding: 35px 20px;
+  display: grid;
+  place-items: center;
+}
+.login-premium,
+.conta-card {
+  width: min(100%, 410px);
+  padding: 34px;
+  border: 1px solid #c6a15b;
+  border-radius: 20px;
+  background: linear-gradient(150deg, #3b1018, #21090e);
+  color: #fffaf0;
+  box-shadow: 0 22px 50px #2b0b1240;
+}
+.selo-login,
+.avatar {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #c6a15b;
+  border-radius: 50%;
+  color: #e5cf9e;
+  font:
+    700 24px Georgia,
+    serif;
+}
+.login-premium h1 {
+  margin: 5px 0 8px;
+  font:
+    700 31px Georgia,
+    serif;
+}
+.login-premium > p,
+.conta-card > p {
+  margin: 5px 0;
+  color: #d5c7b4;
+}
+.chamada {
+  color: #e5cf9e !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.login-premium form {
+  margin-top: 25px;
+  text-align: left;
+}
+.login-premium label {
+  display: block;
+  margin: 13px 0;
+  color: #e5cf9e;
+  font-size: 12px;
+  font-weight: 700;
+}
+.login-premium input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px;
+  border: 1px solid #c6a15b88;
+  border-radius: 7px;
+  background: #fffaf0;
+  color: #29231e;
+  outline: none;
+}
+.login-premium input:focus {
+  border-color: #e5cf9e;
+  box-shadow: 0 0 0 3px #c6a15b25;
+}
+.login-premium button,
+.botao-sair {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #e5cf9e, #c6a15b);
+  color: #3b1018;
+  font-weight: 800;
+  cursor: pointer;
+}
+.erro-login {
+  min-height: 18px;
+  color: #ffd0d0 !important;
+  font-size: 12px;
+  text-align: center;
+}
+.pagina-conta {
+  min-height: auto;
+}
+.conta-card h2 {
+  margin: 6px 0;
+  font:
+    700 28px Georgia,
+    serif;
+}
+.conta-info {
+  margin: 25px 0 10px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-block: 1px solid #c6a15b55;
+}
+.conta-info strong {
+  color: #a9e1b7;
+}
+.botao-sair {
+  background: transparent;
+  color: #e5cf9e;
+  border: 1px solid #c6a15b;
+}
+.botao-sair:hover {
+  background: #c6a15b;
+  color: #3b1018;
+}

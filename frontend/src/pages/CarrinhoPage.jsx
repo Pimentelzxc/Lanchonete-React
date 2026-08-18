@@ -26,12 +26,17 @@ function CarrinhoPage({
             {itens.map((item) => (
               <div className="item" key={item.id}>
                 <span>
-                  <b>{item.quantidade}x {item.nome}</b>
+                  <b>
+                    {item.quantidade}x {item.nome}
+                  </b>
                   <small>{moeda.format(item.preco)} cada</small>
                 </span>
                 <div className="acoes-item">
                   <strong>{moeda.format(item.preco * item.quantidade)}</strong>
-                  <button className="remover-item" onClick={() => removerItem(item.id)}>
+                  <button
+                    className="remover-item"
+                    onClick={() => removerItem(item.id)}
+                  >
                     Remover
                   </button>
                 </div>
@@ -47,7 +52,11 @@ function CarrinhoPage({
 
         <label>
           Cliente / mesa
-          <input value={cliente} onChange={(event) => setCliente(event.target.value)} placeholder="Ex.: Mesa 04 ou Joao" />
+          <input
+            value={cliente}
+            onChange={(event) => setCliente(event.target.value)}
+            placeholder="Ex.: Mesa 04 ou Joao"
+          />
         </label>
         <label>
           Observacoes
