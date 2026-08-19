@@ -60,7 +60,12 @@ function App() {
   const salvarUsuario = (novoUsuario) => {
     localStorage.setItem("usuario-lanchonete", JSON.stringify(novoUsuario));
     setUsuario(novoUsuario);
-    navigate("/cardapio");
+
+    if (novoUsuario.tipo === "admin") {
+      navigate("/cozinha");
+    } else {
+      navigate("/cardapio");
+    }
   };
 
   const salvarCarrinho = (novoCarrinho) => {
